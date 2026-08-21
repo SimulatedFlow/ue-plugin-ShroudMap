@@ -358,4 +358,4 @@ other.
 
 ---
 
-© 2026 Silvan Teufel. All rights reserved.
+© 2026 Simulated Flow. All rights reserved.
