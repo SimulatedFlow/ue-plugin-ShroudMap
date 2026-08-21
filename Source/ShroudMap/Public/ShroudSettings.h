@@ -1,4 +1,4 @@
-// Copyright 2026 Simulated Flow. All Rights Reserved.
+// Copyright 2026 Silvan Teufel. All Rights Reserved.
 
 #pragma once
 
@@ -225,6 +225,17 @@ public:
 	/** Distance from the eye, in cells, that is lit whatever the height field says. You see your own feet. */
 	UPROPERTY(Config, EditAnywhere, Category = "Terrain Occlusion", meta = (ClampMin = "0.0", UIMax = "8.0"))
 	float NearFieldCells = 1.5f;
+
+	/**
+	 * Hard cap on footprints rebuilt in one update while occlusion is actually being applied. 0 lifts it.
+	 *
+	 * A separate, much smaller budget than the plain one on purpose: a disc footprint is a bounding-box
+	 * walk, an occluded one is several hundred rays with a hundred height samples each. Ten of the second
+	 * kind cost what a thousand of the first do, and pretending one budget fits both is how a plugin ends
+	 * up with a frame spike nobody can find.
+	 */
+	UPROPERTY(Config, EditAnywhere, Category = "Terrain Occlusion", meta = (ClampMin = "0", UIMax = "128"))
+	int32 MaxOccludedFootprintRebuildsPerUpdate = 8;
 
 	// --------------------------------------------------------------------------------------------------
 	// Debug

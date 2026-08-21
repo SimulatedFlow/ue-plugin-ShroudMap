@@ -1,4 +1,4 @@
-// Copyright 2026 Simulated Flow. All Rights Reserved.
+// Copyright 2026 Silvan Teufel. All Rights Reserved.
 
 #pragma once
 
@@ -463,6 +463,12 @@ private:
 	/** Phase of each Shroud.Test revealer on its orbit. */
 	TArray<float> TestRevealerPhases;
 
+	/** Centre of the Shroud.Test orbit. */
+	FVector TestRingOrigin = FVector::ZeroVector;
+
+	/** Radius of the Shroud.Test orbit, in cm. */
+	float TestRingRadius = 0.0f;
+
 	//~ Geometry -----------------------------------------------------------------------------------------
 
 	int32 Resolution = 512;
@@ -493,6 +499,7 @@ private:
 	int32 MaxRaysPerRevealer = 512;
 	float HorizonSlack = 0.03f;
 	float NearFieldCells = 1.5f;
+	int32 MaxOccludedFootprintRebuildsPerUpdate = 8;
 	bool bTickInEditorWorlds = true;
 
 	//~ Switches -----------------------------------------------------------------------------------------
