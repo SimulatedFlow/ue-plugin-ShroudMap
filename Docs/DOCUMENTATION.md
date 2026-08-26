@@ -63,9 +63,9 @@ that walked onto it" is exactly what a strategy game is made of.
 |---|---|
 | **Engine version** | Unreal Engine **5.8** (`"EngineVersion": "5.8.0"`) |
 | **Module** | `ShroudMap`, `Type: Runtime`, `LoadingPhase: PreDefault` |
-| **Platform allow-list** | `Win64`, `Mac`, `Linux` |
+| **Platform allow-list** | `Win64` |
 | **Built and verified on** | **Win64** — Development Editor and a packaged plugin build |
-| **Mac / Linux** | Allow-listed in the `.uplugin`, **not built and not tested for this release** |
+| **Mac / Linux** | Not in the `PlatformAllowList`, **not built and not tested for this release** |
 | **Project type** | C++ **and** Blueprint-only projects (the plugin ships precompiled binaries; a Blueprint-only project needs no compiler to use it) |
 | **Engine dependencies** | `Core`, `CoreUObject`, `Engine`, `DeveloperSettings` (public); `RenderCore`, `RHI` (private) |
 | **Marketplace dependencies** | none |

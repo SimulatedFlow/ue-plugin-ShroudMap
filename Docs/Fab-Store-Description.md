@@ -178,13 +178,10 @@ Being clear about this up front saves everybody a refund:
 **Number of C++ Classes:** 6 (subsystem, revealer component, occluder component, statics library,
 settings, HUD)
 **Network Replicated:** No
-**Supported Development Platforms:** Win64 (built and verified). Mac and Linux are allow-listed in the
-`.uplugin` but were not built for this release.
-**Supported Target Build Platforms:** Win64 (built and verified). Mac and Linux are allow-listed in the
-`.uplugin` but were not built for this release.
+**Supported Development Platforms:** Win64 (built and verified). Mac and Linux are not in the `.uplugin`'s `PlatformAllowList` and were not built for this release.
+**Supported Target Build Platforms:** Win64 (built and verified). Mac and Linux are not in the `.uplugin`'s `PlatformAllowList` and were not built for this release.
 
-**Built and verified on Win64 with Unreal Engine 5.8. Mac and Linux are allow-listed in the .uplugin
-but have not been built or tested.**
+**Built and verified on Win64 with Unreal Engine 5.8. Mac and Linux are not in the .uplugin's PlatformAllowList and have not been built or tested.**
 
 **Documentation:** included as `Docs/DOCUMENTATION.md`, covering the update passes, the height field,
 the material contract and every project setting in full - including a section on how to check each
