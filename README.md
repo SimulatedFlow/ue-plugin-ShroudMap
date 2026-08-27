@@ -70,8 +70,9 @@ No minimap. No AI perception. No network replication of the fog texture. No unit
 ShroudMap decides **what the player sees**; what a turret aims at is a different question and a
 different plugin (see TurretMind).
 
-Full documentation: [`Docs/DOCUMENTATION.md`](Docs/DOCUMENTATION.md).
+Full documentation, free and without an account: <https://wiki.teufel-engineering.com/en/ShroudMap/documentation>
 
+The same manual ships with the plugin as [`Docs/DOCUMENTATION.md`](Docs/DOCUMENTATION.md).
 ---
 
 © 2026 Silvan Teufel. All rights reserved.
