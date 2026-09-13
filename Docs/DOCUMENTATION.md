@@ -2,8 +2,8 @@
 
 **Fog of war with a memory, for Unreal Engine 5.8.**
 
-One runtime module · `LoadingPhase: PreDefault` · Win64 built and verified; Mac and Linux
-allow-listed but not built · No third-party code, no other plugin dependencies.
+One runtime module · `LoadingPhase: PreDefault` · Win64 built and verified; Mac and Linux **not**
+in the `PlatformAllowList` and not built · No third-party code, no other plugin dependencies.
 
 ---
 
